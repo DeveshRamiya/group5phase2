@@ -1,0 +1,11 @@
+---
+- name: Deploy Files to EC2 Instance
+  hosts: your_ec2_instance
+  become: yes  # Use sudo for elevated privileges
+
+  tasks:
+    - name: Copy files to the EC2 instance
+      copy:
+        src: /
+        dest: /home/ec2-user
+      become_user: ec2-user  # Replace with the appropriate username on your EC2 instance
