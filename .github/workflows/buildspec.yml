@@ -24,6 +24,7 @@ jobs:
       run : | 
         git config --global user.email "ramiyadevesh@gmail.com"
         git config --global user.name "GitHub Actions"
+        git pull
         git rm -r dist
         git commit -m "Delete folder"
         git push
