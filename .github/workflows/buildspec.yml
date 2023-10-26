@@ -39,7 +39,7 @@ jobs:
     - name: Create Zip Folder
       run: |
         # Create a folder with the content you want to include in the zip
-        zip -r npmfiles.zip .
+        zip -r coverage dist LICENSE README.md appspec.yml jest.config.js package-lock.json package.json tsconfig.json npmfiles.zip .
 
     - name: Commit and Push Zip Folder
       run: |
