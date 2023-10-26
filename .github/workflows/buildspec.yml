@@ -39,11 +39,7 @@ jobs:
     - name: Create Zip Folder
       run: |
         # Create a folder with the content you want to include in the zip
-        mkdir npmfiles
-        cp -r * npmfiles
-
-        # Create a zip file from the folder
-        zip -r npmfiles.zip npmfiles
+        zip -r npmfiles.zip .
 
     - name: Commit and Push Zip Folder
       run: |
