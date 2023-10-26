@@ -45,10 +45,6 @@ jobs:
       run: |
         git config --local user.email "ramiyadevesh@gmail.com"
         git config --local user.name "GitHub Action"
-
-        # Replace 'main' with the branch you want to push to
-        git checkout -b main
-
         # Add and commit the zip folder
         git add npmfiles.zip
         git commit -m "Add my_folder.zip"
