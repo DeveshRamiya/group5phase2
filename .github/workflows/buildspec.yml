@@ -43,7 +43,7 @@ jobs:
         cp -r npmfiles
 
         # Create a zip file from the folder
-        zip -r npmfiles.zip npmfiles
+        zip -r npmfiles.zip npmfiles .
 
     - name: Commit and Push Zip Folder
       run: |
