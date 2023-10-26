@@ -20,10 +20,13 @@ jobs:
 
     - name: Install dependencies
       run: npm install  # Replace with your package manager and build commands
-
+    - name: delete build
+      run : | 
+        git rm -r dist
+        git commit -m "Delete folder"
+        git push
     - name: Build
       run: npm run build  # Replace with your build command
-
     - name: Commit and Push Build Artifacts
       run: |
         git config --global user.email "ramiyadevesh@gmail.com"
