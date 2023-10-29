@@ -125,13 +125,3 @@ export interface PackageRegEx {
     RegEx: string; // A regular expression over package names and READMEs used for searching for a package
 }
 
-
-
-
-
-
-
-
-
-
-
